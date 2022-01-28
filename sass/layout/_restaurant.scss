@@ -38,11 +38,10 @@
     margin: 15px 0px 5px 15px;
 }
 
-figcaption p {
-    margin: 5px 15px 15px;
+figcaption {
+    display: flex;
 }
 
-.fa-heart {
-    position: absolute;
-    left: 320px;
+figcaption p {
+    margin: 5px 15px 15px;
 }
