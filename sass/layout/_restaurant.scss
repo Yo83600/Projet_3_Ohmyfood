@@ -1,0 +1,48 @@
+.conteneur-restaurant {
+    background-color: #F2F2F2;
+    padding: 20px 20px 0px 20px;
+    margin-top: 50px;
+}
+
+.row-restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.photo-restaurant {
+    background-color: white;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    transition: 1s ease;
+}
+
+.photo-restaurant img {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.texte-restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texte-restaurant h4 {
+    margin: 15px 0px 5px 15px;
+}
+
+figcaption p {
+    margin: 5px 15px 15px;
+}
+
+.fa-heart {
+    position: absolute;
+    left: 320px;
+}

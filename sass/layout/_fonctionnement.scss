@@ -1,0 +1,23 @@
+#fonctionnement {
+    h2 {
+        padding: 20px;
+    }
+
+    .fonctionnement-etape {
+        display: contents;
+        flex-direction: column;
+    }
+
+    .fonctionnement-etape li {
+        @include fonctionnement-etape;
+    }
+
+    .etape {
+        @include etape;
+    }
+
+    .icon-etape {
+        color: #b2b2b2;
+        margin: 0 30px;
+    }
+}

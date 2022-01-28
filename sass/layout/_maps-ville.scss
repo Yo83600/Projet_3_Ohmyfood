@@ -1,0 +1,14 @@
+#maps-ville {
+    background: $color-grey;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+
+    .maps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-map-marker-alt {
+        margin-right: 10px;
+    }
+}

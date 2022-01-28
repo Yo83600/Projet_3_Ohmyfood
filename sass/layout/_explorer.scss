@@ -1,0 +1,11 @@
+.explorer-restaurant {
+    @include explorer;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p {
+        color: #4d4d4dbe;
+    }
+}
