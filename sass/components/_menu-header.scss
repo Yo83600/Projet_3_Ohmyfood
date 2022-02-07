@@ -1,0 +1,32 @@
+.header-menu img {
+    object-fit: cover;
+    width: 100%;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+    height: 250px;
+}
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    font-size: 20px;
+    left: 30px;
+}
+
+.menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+
+    .titre-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h2 {
+            font-family: shrikhand, sans-serif;
+        }
+    }
+}

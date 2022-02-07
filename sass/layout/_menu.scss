@@ -1,0 +1,54 @@
+.titre-list-menu {
+    padding-left: 20px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+hr {
+    width: 40px;
+    border: 2px solid $color-third;
+    margin-left: 20px;
+}
+
+.list-menu {
+    display: contents;
+    flex-direction: column;
+}
+
+.bloc-menu {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 15px;
+    transition: 1s ease;
+
+    h4 {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .text-menu {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding-right: 15px;
+    }
+}
+
+.alignement-bouton {
+    display: flex;
+    justify-content: center;
+
+    .bouton-commander {
+        @include bouton-explorer;
+        margin: 60px;
+        padding: 15px 50px;
+    }
+}
