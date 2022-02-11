@@ -5,6 +5,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    top: 0;
     height: 100%;
     position: fixed;
     animation: fond 2.5s linear forwards;
@@ -15,58 +16,18 @@
     border: 16px solid #2222221f;
     border-top: 16px solid;
     border-radius: 50%;
-    top: 40%;
-    left: 38%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     z-index: 9999;
-    position: fixed;
+    position: absolute;
     pointer-events: none;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     animation: spin 2.5s linear forwards;
-}
-
-@keyframes spin {
-    0% {
-        opacity: 1;
-        transform: rotate(0);
-        color: $color-primary;
-    }
-
-    25% {
-        opacity: 1;
-        transform: rotate(90deg);
-        color: #b35cdc;
-    }
-
-    50% {
-        opacity: 1;
-        transform: rotate(180deg);
-        color: #cf64dc;
-    }
-
-    75% {
-        opacity: 1;
-        transform: rotate(240deg);
-        color: #e86edb;
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotate(360deg);
-        color: #ff79da;
-    }
-}
-
-@keyframes fond {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 0;
-    }
 }

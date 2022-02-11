@@ -10,6 +10,10 @@
 
     .fonctionnement-etape li {
         @include fonctionnement-etape;
+
+        &:hover {
+            background-color: #9256dc46;
+        }
     }
 
     .etape {

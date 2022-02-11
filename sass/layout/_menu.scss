@@ -22,7 +22,18 @@ hr {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 15px;
-    transition: 1s ease;
+    transition: padding-right 450ms ease-in-out;
+    cursor: pointer;
+
+    &:hover .validation {
+        display: flex;
+        opacity: 1;
+        transform: translate(-50px);
+    }
+
+    &:hover {
+        padding-right: 75px;
+    }
 
     h4 {
         margin-bottom: 0;
@@ -42,6 +53,22 @@ hr {
     }
 }
 
+.fade-1 {
+    animation: fade 1s ease-in-out,
+        opacity-duration 1s ease-in-out;
+}
+
+.fade-2 {
+    animation: fade 1.5s ease-in-out,
+        opacity-duration 1.5s ease-in-out;
+}
+
+.fade-3 {
+    animation: fade 2s ease-in-out,
+        opacity-duration 2s ease-in-out;
+}
+
+
 .alignement-bouton {
     display: flex;
     justify-content: center;
@@ -50,5 +77,26 @@ hr {
         @include bouton-explorer;
         margin: 60px;
         padding: 15px 50px;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+        }
     }
+}
+
+.validation {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-third;
+    color: #fff;
+    width: 60px;
+    height: 75px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -35px;
+    margin-top: -64px;
 }

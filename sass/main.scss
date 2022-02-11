@@ -2,19 +2,19 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/keyframes";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons-explorer";
+@import "./components/buttons-new";
 @import "./components/menu-header";
 @import "./components/buttons-etape";
 @import "./components/coeur-restaurant";
 
 @import "./layout/header";
-@import "./layout/nav";
 @import "./layout/footer";
-@import "./layout/form";
 @import "./layout/maps-ville";
 @import "./layout/explorer";
 @import "./layout/fonctionnement";
