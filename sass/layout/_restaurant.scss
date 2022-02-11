@@ -1,11 +1,17 @@
-.conteneur-restaurant {
+#restaurant {
     background-color: #F2F2F2;
     padding: 20px 20px 0px 20px;
     margin-top: 50px;
 
+    .container-restaurant{
+        @media (min-width: map-get($breakpoints, tablet)) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
     .row-restaurant {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
     }
@@ -46,7 +52,7 @@
         margin-bottom: 5px;
     }
 
-    .texte-restaurant {
+    .text-restaurant {
         display: flex;
         flex-direction: column;
         width: calc(100% - 50px);

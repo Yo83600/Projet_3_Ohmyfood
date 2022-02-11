@@ -1,19 +1,36 @@
-.titre-list-menu {
+.title-list-menu {
     padding-left: 20px;
     font-weight: normal;
     margin-top: 30px;
     margin-bottom: 5px;
+
+    @media (min-width: map-get($breakpoints, tablet)) {
+        text-align: center;
+        padding-right: 20px;
+    }
 }
 
 hr {
     width: 40px;
     border: 2px solid $color-third;
     margin-left: 20px;
+
+     @media (min-width: map-get($breakpoints, tablet)) {
+        margin: auto ;
+             padding-right: 20px;
+     }
 }
 
 .list-menu {
     display: contents;
     flex-direction: column;
+
+    li {
+        @media (min-width: map-get($breakpoints, tablet)) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .bloc-menu {
@@ -51,6 +68,10 @@ hr {
         align-content: center;
         padding-right: 15px;
     }
+
+    @media (min-width: map-get($breakpoints, tablet)) {
+        width: 50%;
+    }
 }
 
 .fade-1 {
@@ -69,12 +90,12 @@ hr {
 }
 
 
-.alignement-bouton {
+.align-button {
     display: flex;
     justify-content: center;
 
-    .bouton-commander {
-        @include bouton-explorer;
+    .btn-command {
+        @include button-explore;
         margin: 60px;
         padding: 15px 50px;
 

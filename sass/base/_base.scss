@@ -17,3 +17,8 @@ li {
     list-style-type: none;
 }
 
+.align-center-title {
+    @media (min-width: map-get($breakpoints, tablet)) {
+        text-align: center;
+    }
+}

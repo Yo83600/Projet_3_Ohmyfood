@@ -1,5 +1,5 @@
-.bouton-explorer {
-    @include bouton-explorer;
+.button-explore {
+    @include button-explore;
 
     &:hover {
         transform: scale(1.1);

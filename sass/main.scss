@@ -3,21 +3,22 @@
 @import "./utils/mixins";
 @import "./utils/extensions";
 @import "./utils/keyframes";
+@import "./utils/maps";
 
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons-explorer";
+@import "./components/buttons-explore";
 @import "./components/buttons-new";
 @import "./components/menu-header";
 @import "./components/buttons-etape";
-@import "./components/coeur-restaurant";
+@import "./components/heart-restaurant";
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/maps-ville";
-@import "./layout/explorer";
-@import "./layout/fonctionnement";
+@import "./layout/maps-city";
+@import "./layout/explore";
+@import "./layout/step";
 @import "./layout/restaurant";
 @import "./layout/menu";
 @import "./layout/loader";

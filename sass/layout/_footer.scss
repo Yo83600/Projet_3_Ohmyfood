@@ -3,9 +3,15 @@ footer {
     padding: 20px;
     color: white;
 
+    @media (min-width: map-get($breakpoints, tablet)) {
+        text-align: center;
+    }
+
     h3 {
         font-family: 'Shrikhand', sans-serif;
         padding: 5px 0 15px 0;
+
+
     }
 
     ul {
@@ -16,6 +22,15 @@ footer {
 
             a {
                 color: white;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            @media (min-width: map-get($breakpoints, tablet)) {
+                display: inline-flex;
+                padding-right: 30px;
             }
         }
     }

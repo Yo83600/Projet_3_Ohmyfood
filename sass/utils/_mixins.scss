@@ -1,11 +1,11 @@
-@mixin explorer {
+@mixin explore {
     background: #f6f6f6;
     text-align: center;
     width: 100%;
     padding: 20px;
 }
 
-@mixin bouton-explorer {
+@mixin button-explore {
     background: $color-linear;
     border: 1px solid transparent;
     color: #fff;
@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-@mixin etape {
+@mixin step-website {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
     right: 15px;
 }
 
-@mixin fonctionnement-etape {
+@mixin step-operation {
     display: flex;
     align-items: center;
     margin: 0 25px 25px 25px;

@@ -8,13 +8,40 @@
     }
 }
 
-@keyframes opacity-duration {
+@keyframes fill {
     0% {
-        opacity:0;
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    25% {
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0.7;
+        transform: scale(1.10);
     }
 
     100% {
-        opacity:1;
+        opacity: 1;
+        transform: scale(1.20);
+    }
+}
+
+@keyframes opacity-duration {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -72,6 +99,6 @@
 
     100% {
         transform: translate(-30px);
-        opacity: 1s;
+        opacity: 1;
     }
 }

@@ -3,6 +3,10 @@
     width: 100%;
     box-shadow: inset 0px 5px 5px 0px #dddddd;
     height: 250px;
+
+    @media (min-width: map-get($breakpoints, tablet)) {
+        height: 300px;
+    }
 }
 
 .arrow {
@@ -20,13 +24,28 @@
     position: relative;
     margin-top: -50px;
 
-    .titre-menu {
+    .title-menu {
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+        .icon-menu {
+            display: flex;
+            align-items: center;
+            width: 50px;
+        }
+
         h2 {
             font-family: shrikhand, sans-serif;
+
+            @media (min-width: map-get($breakpoints, tablet)) {
+                padding-right: 100px;
+            }
+        }
+
+        @media (min-width: map-get($breakpoints, tablet)) {
+            display: flex;
+            justify-content: center;
         }
     }
 }

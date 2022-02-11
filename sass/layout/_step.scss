@@ -1,0 +1,32 @@
+#step {
+    h2 {
+        padding: 20px;
+    }
+
+    .step-operation {
+        display: contents;
+        flex-direction: column;
+    }
+
+    .step-operation li {
+        @include step-operation;
+
+        &:hover {
+            background-color: #9256dc46;
+        }
+
+        @media (min-width: map-get($breakpoints, tablet)) {
+            justify-content: center;
+        }
+    }
+
+    .step-website {
+        @include step-website;
+    }
+
+    .icon-etape {
+        color: #b2b2b2;
+        margin: 0 30px;
+        font-size: 15px;
+    }
+}
