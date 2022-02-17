@@ -28,7 +28,7 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
 
     <!-- Pour mettre une icône dans l'onglet de la page -->
-    <link rel="shortcut icon" href="public/images/logo/ohmyfood.png">
+    <link rel="shortcut icon" href="../public/images/logo/ohmyfood.png">
 
     <!-- Pour mettre un titre dans l'onglet de la page -->
     <title> Ohmyfood </title>
@@ -45,117 +45,190 @@
     </header>
 
     <main>
-        <!-- Photo de la page à delice des sens -->
+        <!-- Photo de la page Le délice des sens -->
         <div class="header-menu">
             <img src="../public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="menu delice des sens" title="ohmyfood menu delice des sens">
+                alt="menu a la française" title="ohmyfood menu a la francaise">
         </div>
 
-        <!-- Titre de la page delice des sens -->
+        <!-- Titre de la page Le délice des sens -->
         <section id="section-menu">
             <div class="menu">
                 <div class="title-menu">
                     <h2>Le délice des sens</h2>
-                    <div class="icon-restaurant">
-                        <span><i class="far fa-heart fa-2x"></i></span>
+                    <!-- Icon Coeur -->
+                    <div class="icon-menu">
+                        <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z" />
+                            <defs>
+                                <linearGradient id="text-fill">
+                                    <stop offset="0%" stop-color="#9356DC" />
+                                    <stop offset="100%" stop-color="#FF79DA" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <svg class="heart heart-empty" viewBox="-20 0 550 550" xml:space="preserve">
+                            <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                     C512,93.417,453.532,30,376,30z" />
+                            <defs>
+                                <linearGradient>
+                                    <stop offset="0%" stop-color="#9356DC" />
+                                    <stop offset="100%" stop-color="#FF79DA" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
-                <!-- Partie du menu "Entrées "-->
+                <!-- Partie Entrées -->
                 <h4 class="title-list-menu">ENTRÉES</h4>
                 <hr>
                 <ul class="list-menu">
                     <li>
-                        <div class="bloc-menu">
+                        <div class="bloc-menu fade-1">
                             <h4>Tartare de thon</h4>
                             <div class="text-menu">
-                                <p>Assaisonné au yuzu</p>
+                                <p class="description-dish">Assaisonné au yuzu</p>
                                 <p><strong>25€</strong></p>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bloc-menu">
-                            <h4>Bouchée de homard croustillant</h4>
-                            <div class="text-menu">
-                                <p>Et sa farandole de petits légumes</p>
-                                <p><strong>35€</strong></p>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="bloc-menu">
+                        <div class="bloc-menu fade-2">
+                            <h4>Bouchée de homard croustillant</h4>
+                            <div class="text-menu">
+                                <p class="description-dish">Et sa farandole de petits légumes</p>
+                                <p><strong>35€</strong></p>
+                            </div>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bloc-menu fade-3">
                             <h4>Velouté de cèpes</h4>
                             <div class="text-menu">
-                                <p>Aux truffes</p>
+                                <p class="description-dish">Aux truffes</p>
                                 <p><strong>20€</strong></p>
+                            </div>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <!-- Partie du menu "Plats "-->
+                <!-- Partie Plats -->
                 <h4 class="title-list-menu">PLATS</h4>
                 <hr>
                 <ul class="list-menu">
                     <li>
-                        <div class="bloc-menu">
+                        <div class="bloc-menu fade-1">
                             <h4>Poulet rôti aux herbes de Provence</h4>
                             <div class="text-menu">
-                                <p>Et sa crème de truffe</p>
+                                <p class="description-dish">Et sa crème de truffe</p>
                                 <p><strong>40€</strong></p>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bloc-menu">
-                            <h4>Langouste rôtie</h4>
-                            <div class="text-menu">
-                                <p>Et ses légumes de saison</p>
-                                <p><strong>35€</strong></p>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="bloc-menu">
+                        <div class="bloc-menu fade-2">
+                            <h4>Langouste rôtie</h4>
+                            <div class="text-menu">
+                                <p class="description-dish">Et ses légumes de saison</p>
+                                <p><strong>35€</strong></p>
+                            </div>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bloc-menu fade-3">
                             <h4>Côte de boeuf Angus</h4>
                             <div class="text-menu">
-                                <p>Et sa purée de panais</p>
+                                <p class="description-dish">Et sa purée de panais</p>
                                 <p><strong>44€</strong></p>
+                            </div>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <!-- Partie du menu "Dessert"-->
+                <!-- Partie Dessert -->
                 <h4 class="title-list-menu">DESSERTS</h4>
                 <hr>
                 <ul class="list-menu">
                     <li>
-                        <div class="bloc-menu">
+                        <div class="bloc-menu fade-1">
                             <h4>Farandole de desserts</h4>
                             <div class="text-menu">
-                                <p>Du chef</p>
+                                <p class="description-dish">Du chef</p>
                                 <p><strong>18€</strong></p>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bloc-menu">
-                            <h4>Crème brulée</h4>
-                            <div class="text-menu">
-                                <p>Revisitée</p>
-                                <p><strong>22€</strong></p>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="bloc-menu">
+                        <div class="bloc-menu fade-2">
+                            <h4>Crème brulée</h4>
+                            <div class="text-menu">
+                                <p class="description-dish">Revisitée</p>
+                                <p><strong>22€</strong></p>
+                            </div>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bloc-menu fade-3">
                             <h4>Tiramisu</h4>
                             <div class="text-menu">
-                                <p>À la noisette</p>
-                                <p><strong>23€</strong></p>
+                                <p class="description-dish">À la noisette</p>
+                                <p class="price-menu"><strong>23€</strong></p>
+                            </div>
+                            <div class="position-validation">
+                                <div class="validation">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
                 </ul>
+                <!-- Bouton commander -->
                 <div class="align-button">
                     <button class="btn-command"> Commander </button>
                 </div>

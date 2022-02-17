@@ -9,7 +9,7 @@
 @keyframes fill {
   0% {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   25% {
     opacity: 0.3;
@@ -74,14 +74,12 @@
     opacity: 0;
   }
 }
-@keyframes paddinge {
-  0% {
-    transform: translate(0px);
-    opacity: 0;
+@keyframes rotates {
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    transform: translate(-30px);
-    opacity: 1;
+  to {
+    transform: rotate(360deg);
   }
 }
 * {
@@ -139,6 +137,11 @@ html {
   display: flex;
   margin-top: 15px;
   margin-left: 250px;
+}
+@media (max-width: 380px) {
+  .btn-card {
+    margin-left: 200px;
+  }
 }
 
 .new {
@@ -212,16 +215,17 @@ html {
 
 .heart-full {
   z-index: 2;
+  position: absolute;
 }
 .heart-full:hover {
   animation: fill 0.4s ease-in-out;
-  transform: scale(1.15);
   fill: url(#text-fill);
+  transform: scale(1.15);
   stroke: none;
 }
 
 .heart-empty {
-  position: absolute;
+  position: relative;
 }
 
 .header {
@@ -276,8 +280,18 @@ footer .fa-hands-helping {
   justify-content: center;
   align-items: center;
 }
-#maps-city .fa-map-marker-alt {
-  margin-right: 10px;
+#maps-city .maps .fa-map-marker-alt {
+  margin-right: 5px;
+}
+#maps-city .maps input {
+  background-color: transparent;
+  border: transparent;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px 0px 15px 0px;
+  width: 150px;
+  padding: 0;
+  font-size: 15px;
 }
 
 .explore-restaurant {
@@ -367,12 +381,22 @@ footer .fa-hands-helping {
   box-shadow: -1px 5px 15px 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .photo-restaurant:hover {
+    transform: scale(1.02);
+  }
+}
 .photo-restaurant img {
   width: 350px;
   height: 150px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+@media (max-width: 380px) {
+  .photo-restaurant img {
+    width: 300px;
+  }
 }
 
 .description-photo {
@@ -441,21 +465,27 @@ hr {
   border-radius: 15px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 15px;
+  position: relative;
+  overflow: hidden;
   transition: padding-right 450ms ease-in-out;
+  margin: 15px;
   cursor: pointer;
 }
 .bloc-menu:hover .validation {
   display: flex;
-  opacity: 1;
-  transform: translate(-50px);
 }
 .bloc-menu:hover {
-  padding-right: 75px;
+  padding-right: 70px;
+}
+.bloc-menu:hover .validation svg {
+  animation: rotates 450ms ease-in-out;
 }
 .bloc-menu h4 {
   margin-bottom: 0;
   margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .bloc-menu p {
   margin-top: 5px;
@@ -471,6 +501,12 @@ hr {
   .bloc-menu {
     width: 50%;
   }
+}
+
+.description-dish {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .fade-1 {
@@ -507,6 +543,11 @@ hr {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
+.position-validation {
+  display: flex;
+  justify-content: end;
+}
+
 .validation {
   display: none;
   justify-content: center;
@@ -518,9 +559,8 @@ hr {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  padding: 20px;
-  right: -35px;
   margin-top: -64px;
+  margin-right: -70px;
 }
 
 .load {

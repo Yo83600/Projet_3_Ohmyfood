@@ -6,9 +6,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-    .fa-map-marker-alt {
-        margin-right: 10px;
+        .fa-map-marker-alt {
+            margin-right: 5px;
+        }
+
+        input {
+            background-color: transparent;
+            border: transparent;
+            text-align: center;
+            font-weight: bold;
+            margin: 15px 0px 15px 0px;
+            width: 150px;
+            padding: 0;
+            font-size: 15px;
+        }
     }
 }

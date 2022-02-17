@@ -3,13 +3,14 @@
     padding: 20px 20px 0px 20px;
     margin-top: 50px;
 
-    .container-restaurant{
+    .container-restaurant {
         @media (min-width: map-get($breakpoints, tablet)) {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
     }
+
     .row-restaurant {
         display: flex;
         justify-content: space-around;
@@ -28,6 +29,10 @@
     &:hover {
         box-shadow: -1px 5px 15px 5px rgba(0, 0, 0, 0.5);
         transform: scale(1.05);
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            transform: scale(1.02);
+        }
     }
 
     img {
@@ -36,6 +41,10 @@
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+
+        @media (max-width: 380px) {
+            width: 300px;
+        }
     }
 }
 

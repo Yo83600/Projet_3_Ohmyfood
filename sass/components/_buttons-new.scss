@@ -3,6 +3,10 @@
     display: flex;
     margin-top: 15px;
     margin-left: 250px;
+
+    @media (max-width: 380px) {
+        margin-left: 200px;
+    }
 }
 
 .new {
