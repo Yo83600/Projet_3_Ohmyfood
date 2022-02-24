@@ -39,14 +39,10 @@ hr {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     padding: 10px;
     position: relative;
-    overflow: hidden;
     transition: padding-right 450ms ease-in-out;
+    overflow: hidden;
     margin: 15px;
     cursor: pointer;
-
-    &:hover .validation {
-        display: flex;
-    }
 
     &:hover {
         padding-right: 70px;
@@ -103,30 +99,13 @@ hr {
         opacity-duration 2s ease-in-out;
 }
 
-
-.align-button {
-    display: flex;
-    justify-content: center;
-
-    .btn-command {
-        @include button-explore;
-        margin: 60px;
-        padding: 15px 50px;
-
-        &:hover {
-            transform: scale(1.1);
-            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
-        }
-    }
-}
-
 .position-validation {
     display: flex;
     justify-content: end;
 }
 
 .validation {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: $color-third;

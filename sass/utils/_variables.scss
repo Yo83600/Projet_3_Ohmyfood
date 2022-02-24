@@ -3,3 +3,4 @@ $color-secondary:#FF79DA;
 $color-third:#99E2D0;
 $color-grey:#eaeaea;
 $color-linear:linear-gradient(to left bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+$color-linear-light:linear-gradient(to left bottom, lighten(#9356dc, 5%), lighten(#b35cdc,5%), lighten(#cf64dc,5%), lighten(#e86edb,5%), lighten(#ff79da,5%));

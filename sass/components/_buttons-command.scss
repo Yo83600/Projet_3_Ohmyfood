@@ -1,0 +1,16 @@
+.align-button {
+    display: flex;
+    justify-content: center;
+
+    .btn-command {
+        @include button-explore;
+        margin: 60px;
+        padding: 15px 50px;
+
+        &:hover {
+            transform: scale(1.1);
+            background: $color-linear-light;
+            box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
